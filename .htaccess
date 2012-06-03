@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|style|docs|public|fonts|captcha|ckeditor|uploads|favicon\.ico)
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript

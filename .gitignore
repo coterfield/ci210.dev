@@ -169,5 +169,8 @@ pip-log.txt
 ## Propios
 #############
 
+user_guide/
+sources/
 user_guide/**/*
+sources/**/*
 *.log

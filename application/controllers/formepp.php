@@ -19,35 +19,57 @@ class Formepp extends CI_Controller {
 	 */
 
 
-    function __construct()
-    {
-        parent::__construct();
+	function __construct()
+	{
+		parent::__construct();
 
-        /* Standard Libraries of codeigniter are required */
-        $this->load->database();
-        $this->load->helper('url');
-        /* ------------------ */
+		/* Standard Libraries of codeigniter are required */
+		$this->load->database();
+		$this->load->helper('url');
+		/* ------------------ */
 
-        $this->load->library('grocery_CRUD');
+		$this->load->library('grocery_CRUD');
 
-    }
+	}
 
-    public function index()
-    {
-        echo "<h1>Welcome to the world of Codeigniter</h1>";//Just an example to ensure that we get into the function
-        die();
-    }
+	public function index()
+	{
+	//	echo "<h1>Welcome to the world of Codeigniter</h1>";//Just an example to ensure that we get into the function
+	//	die();
+		$data['form_title'] = 'Formulario FormEPP';
 
-    public function employees()
-    {
-        $this->grocery_crud->set_table('employees');
-        $output = $this->grocery_crud->render();
+		$this->load->helper(array('form', 'url'));
 
-        echo "<pre>";
-        print_r($output);
-        echo "</pre>";
-        die();
-    }
+		$this->load->library('form_validation');
+
+		$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[5]|max_length[12]|xss_clean');
+		$this->form_validation->set_rules('password', 'Password', 'trim|required|matches[passconf]|md5');
+		$this->form_validation->set_rules('passconf', 'Password Confirmation', 'trim|required');
+		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+
+		$this->load->view('template/pretmpl', $data);
+		if ($this->form_validation->run() == FALSE)
+		{
+			$this->load->view('form_base');
+		}
+		else
+		{
+			$this->load->view('form_base');
+		}
+		$this->load->view('template/postmpl', $data);
+
+	}
+
+	public function cursos()
+	{
+		$this->grocery_crud->set_table('cursos');
+		$output = $this->grocery_crud->render();
+
+		echo "<pre>";
+		print_r($output);
+		echo "</pre>";
+		die();
+	}
 
 	public function view($page = home)
 	{

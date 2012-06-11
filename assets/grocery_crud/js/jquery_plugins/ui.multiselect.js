@@ -4,10 +4,10 @@
  * Authors:
  *  Michael Aufreiter (quasipartikel.at)
  *  Yanick Rochon (yanick.rochon[at]gmail[dot]com)
- * 
+ *
  * Dual licensed under the MIT (MIT-LICENSE.txt)
  * and GPL (GPL-LICENSE.txt) licenses.
- * 
+ *
  * http://www.quasipartikel.at/multiselect/
  *
  * 
@@ -18,7 +18,7 @@
  * Optional:
  * localization (http://plugins.jquery.com/project/localisation)
  * scrollTo (http://plugins.jquery.com/project/ScrollTo)
- * 
+ *
  * Todo:
  *  Make batch actions faster
  *  Implement dynamic insertion through remote calls
@@ -64,7 +64,7 @@ $.widget("ui.multiselect", {
 		// fix list height to match <option> depending on their individual header's heights
 		this.selectedList.height(Math.max(this.element.height()-this.selectedActions.height(),1));
 		this.availableList.height(Math.max(this.element.height()-this.availableActions.height(),1));
-		
+
 		if ( !this.options.animated ) {
 			this.options.show = 'show';
 			this.options.hide = 'hide';
@@ -326,9 +326,9 @@ $.widget("ui.multiselect", {
 		
 $.extend($.ui.multiselect, {
 	locale: {
-		addAll:'Add all',
-		removeAll:'Remove all',
-		itemsCount:'items selected'
+		addAll:'Agregar todos',
+		removeAll:'Quitar todos',
+		itemsCount:'Items seleccionados'
 	}
 });
 

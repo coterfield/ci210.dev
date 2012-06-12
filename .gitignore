@@ -171,6 +171,12 @@ pip-log.txt
 
 user_guide/
 sources/
+web/
 user_guide/**/*
 sources/**/*
+web/**/*
 *.log
+
+# Sublime Text 2
+ci210.dev.sublime-project
+ci210.dev.sublime-workspace

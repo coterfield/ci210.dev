@@ -67,11 +67,11 @@
 <body>
 
 <div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<h1>Bienvenido al Sistema de Formularios de Odoncol!</h1>
 
 	<div id="body">
 		<p>Chekin.</p>
-
+<!--
 		<p>If you would like to edit this page you'll find it located at:</p>
 		<code>application/views/welcome_message.php</code>
 
@@ -79,9 +79,10 @@
 		<code>application/controllers/welcome.php</code>
 
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+-->
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+	<p class="footer">Generado en <strong>{elapsed_time}</strong> segundos</p>
 </div>
 
 </body>

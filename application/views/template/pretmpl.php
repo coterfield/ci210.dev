@@ -4,28 +4,29 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<title>Colegio Odontológico de Lima <?php if (form_title != ''): ?>:: <?=$form_title?><?php endif; ?></title>
+	<title>Colegio Odontológico de Lima <?php if ($form_title != ''): ?>:: <?=$form_title?><?php endif; ?></title>
 
-	<link rel="stylesheet" href="http://www.col.org.pe/web/wp-content/themes/col/style.css" type="text/css" />
-	<link rel="stylesheet" href="http://www.col.org.pe/web/wp-content/themes/col/js/colorbox/colorbox.css" type="text/css" />
+	<link rel="stylesheet" href="/web/wp-content/themes/col/style.css" type="text/css" />
+	<link rel="stylesheet" href="/web/wp-content/themes/col/js/colorbox/colorbox.css" type="text/css" />
 
 	<link rel="alternate" type="application/rss+xml" title="Colegio Odontológico de Lima &raquo; Feed" href="http://www.col.org.pe/web/feed/" />
 	<link rel="alternate" type="application/rss+xml" title="Colegio Odontológico de Lima &raquo; RSS de los comentarios" href="http://www.col.org.pe/web/comments/feed/" />
-	<link rel='stylesheet' id='admin-bar-css'  href='http://www.col.org.pe/web/wp-includes/css/admin-bar.css?ver=20111209' type='text/css' media='all' />
-	<link rel='stylesheet' id='tribe-events-calendar-style-css'  href='http://www.col.org.pe/web/wp-content/plugins/the-events-calendar/resources/events.css?ver=3.3.2' type='text/css' media='all' />
-	<link rel='stylesheet' id='contact-form-7-css'  href='http://www.col.org.pe/web/wp-content/plugins/contact-form-7/styles.css?ver=3.1.2' type='text/css' media='all' />
-	<script type='text/javascript' src='http://www.col.org.pe/web/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
-	<script type='text/javascript' src='http://www.col.org.pe/web/wp-content/plugins/the-events-calendar/resources/jquery.pjax.js?ver=3.3.2'></script>
-	<script type='text/javascript' src='http://www.col.org.pe/web/wp-content/plugins/the-events-calendar/resources/events.js?ver=3.3.2'></script>
-	<script type='text/javascript' src='http://www.col.org.pe/web/wp-content/themes/col/js/jcarousellite_1.0.1.pack.js?ver=3.3.2'></script>
-	<script type='text/javascript' src='http://www.col.org.pe/web/wp-content/themes/col/js/jquery.nivo.slider.pack.js?ver=3.3.2'></script>
-	<script type='text/javascript' src='http://www.col.org.pe/web/wp-content/themes/col/js/colorbox/jquery.colorbox-min.js?ver=3.3.2'></script>
+	<link rel='stylesheet' id='admin-bar-css'  href='/web/wp-includes/css/admin-bar.css?ver=20111209' type='text/css' media='all' />
+	<link rel='stylesheet' id='tribe-events-calendar-style-css'  href='/web/wp-content/plugins/the-events-calendar/resources/events.css?ver=3.3.2' type='text/css' media='all' />
+	<!--link rel='stylesheet' id='contact-form-7-css'  href='/web/wp-content/plugins/contact-form-7/styles.css?ver=3.1.2' type='text/css' media='all' /-->
+	<link rel='stylesheet' href='/assets/css/form.css' type='text/css' media='all' />
+	<script type='text/javascript' src='/web/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+	<script type='text/javascript' src='/web/wp-content/plugins/the-events-calendar/resources/jquery.pjax.js?ver=3.3.2'></script>
+	<script type='text/javascript' src='/web/wp-content/plugins/the-events-calendar/resources/events.js?ver=3.3.2'></script>
+	<script type='text/javascript' src='/web/wp-content/themes/col/js/jcarousellite_1.0.1.pack.js?ver=3.3.2'></script>
+	<script type='text/javascript' src='/web/wp-content/themes/col/js/jquery.nivo.slider.pack.js?ver=3.3.2'></script>
+	<script type='text/javascript' src='/web/wp-content/themes/col/js/colorbox/jquery.colorbox-min.js?ver=3.3.2'></script>
 	<script type='text/javascript'>
 	/* <![CDATA[ */
 	var AvenueVars = {"ajaxUrl":"http:\/\/www.col.org.pe\/web\/wp-admin\/admin-ajax.php"};
 	/* ]]> */
 	</script>
-	<script type='text/javascript' src='http://www.col.org.pe/web/wp-content/themes/col/js/scripts.js?ver=3.3.2'></script>
+	<script type='text/javascript' src='/web/wp-content/themes/col/js/scripts.js?ver=3.3.2'></script>
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.col.org.pe/web/xmlrpc.php?rsd" />
 	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.col.org.pe/web/wp-includes/wlwmanifest.xml" />
 	<meta name="generator" content="WordPress 3.3.2" />
@@ -34,6 +35,27 @@
 		html { margin-top: 28px !important; }
 		* html body { margin-top: 28px !important; }
 	</style>
+
+
+	<script src="/assets/js/esplendido.js"></script>
+	<script src="/assets/js/jquery.formalize.min.js"></script>
+	<script src="/assets/js/prefixfree.min.js"></script>
+	<script src="/assets/js/jquery.uniform.min.js"></script>
+	<script src="/assets/js/chosen.jquery.min.js"></script>
+	<script src="/assets/js/ui-custom.js"></script>
+	<script src="/assets/js/ui.multiselect.js"></script>
+	<script src="/assets/js/ui.spinner.min.js"></script>
+	<script src="/assets/js/jquery.dataTables.min.js"></script>
+	<script src="/assets/js/jquery.metadata.js"></script>
+	<script src="/assets/js/progressbar.js"></script>
+	<script src="/assets/js/jquery.tipsy.js"></script>
+	<script src="/assets/js/jquery.maskedinput-1.3.min.js"></script>
+	<script src="/assets/js/jquery.validate.min.js"></script>
+	<script src="/assets/js/jquery.validationEngine-en.js"></script>
+	<script src="/assets/js/jquery.validationEngine.js"></script>
+	<script src="/assets/js/jquery.elastic.js"></script>
+	<script src="/assets/js/fullcalendar.min.js"></script>
+	<script src="/assets/js/jquery.modal.js"></script>
 
 	<script type='text/javascript'>
 	jQuery(window).load(function() {
